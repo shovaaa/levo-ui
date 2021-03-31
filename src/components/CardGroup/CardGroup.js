@@ -23,7 +23,7 @@ function CardGroup() {
         <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
           <Card
             cardColor="#61aee8"
-            headerText="12 Sep 2018"
+            headerText="13 Sep 2018"
             titleText="Love of learning"
             cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -32,7 +32,7 @@ function CardGroup() {
         <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
           <Card
             cardColor="#b07bd1"
-            headerText="12 Sep 2018"
+            headerText="14 Sep 2018"
             titleText="Love of learning, art keys to a great year for Gwen"
             cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -40,12 +40,12 @@ function CardGroup() {
         </div>
       </div>
 
-      {showMore && (
-        < div className="row">
+      { showMore && (
+        <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
             <Card
               cardColor="#f52f59"
-              headerText="12 Sep 2018"
+              headerText="15 Sep 2018"
               titleText="Love of learning, art keys to a great year for Gwen"
               cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
@@ -53,8 +53,8 @@ function CardGroup() {
           <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
             <Card
               cardColor="#41c22b"
-              headerText="12 Sep 2018"
-              titleText="Love of learning"
+              headerText="16 Sep 2018"
+              titleText="Love of learning, art keys to a great year for Gwen"
               cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
@@ -62,16 +62,17 @@ function CardGroup() {
           <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
             <Card
               cardColor="#e86bc2"
-              headerText="12 Sep 2018"
-              titleText="Love of learning, art keys to a great year for Gwen"
+              headerText="17 Sep 2018"
+              titleText="Love of learning"
               cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
           </div>
         </div>
-      )}
+      )
+      }
 
-      <div className="row pt-5 mt-5">
+      <div className="row mt-5">
         <Button
           className="btn btn-outline-danger btn--uppercase btn--center btn--large"
           link="/"
