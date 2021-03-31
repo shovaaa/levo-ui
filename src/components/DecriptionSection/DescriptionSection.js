@@ -3,12 +3,12 @@ import Paragraph from '../Common/Paragraph/Paragraph';
 
 import './DescriptionSection.scss';
 
-import descriptionData from './dummyData';
+import dummyData from './dummyData';
 
 function DescriptionSection() {
   return (
     <div>
-      {descriptionData.map((data) => (
+      {dummyData.map((data) => (
         <div key={data.id}>
           <MainTitle titleText={data.titleText} className="mainTitle_text pb-4" />
           <Paragraph className="paragraph_text text-secondary"

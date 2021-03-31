@@ -2,14 +2,17 @@
   border-radius: 0;
   border: none;
   padding: 10px;
+
   &_header {
     border-bottom: none;
     background-color: transparent;
     padding-bottom: 0;
   }
+
   &_title {
     line-height: 30px;
   }
+
   &_footer {
     border-top: none;
     background-color: transparent;

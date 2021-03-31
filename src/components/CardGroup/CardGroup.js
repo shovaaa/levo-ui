@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import Card from '../Common/Card/Card';
 import Button from '../Common/Button/Button';
 
-import cardData from './dummyData';
+import dummyData from './dummyData';
 
 import './CardGroup.scss';
-
-console.log(cardData.length)
 
 function CardGroup() {
 
@@ -15,8 +13,7 @@ function CardGroup() {
   return (
     <div className="container">
       <div className="row">
-        {!showMore ?
-          cardData.slice(0, 3).map((data) => (
+        {(showMore ? dummyData : dummyData.slice(0, 3)).map((data) => (
             <div className="col-lg-4 col-md-6 col-sm-12 mt-4" key={data.id}>
               <Card
                 cardColor={data.cardColor}
@@ -24,16 +21,8 @@ function CardGroup() {
                 titleText={data.titleText}
                 cardText={data.text} />
             </div>
-          )) :
-          cardData.map((data) => (
-            <div className="col-lg-4 col-md-6 col-sm-12 mt-4" key={data.id}>
-              <Card
-                cardColor={data.cardColor}
-                headerText={data.headerText}
-                titleText={data.titleText}
-                cardText={data.text} />
-            </div>
-          ))}
+          ))
+        }
       </div>
       <div className="row mt-5">
         <Button
