@@ -1,0 +1,25 @@
+name: deploy
+
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.3.0
+
+      - run: npm install
+
+      - run: npm run lint:checks
+
+      - run: npm run build
+
+      - run: npm run deploy -- --prod
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

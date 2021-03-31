@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^4.6.0",
+    "netlify-cli": "^3.13.10",
     "node-sass": "^5.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -25,7 +26,8 @@
     "lint:fix:js": "eslint \"**/*.{js,jsx}\" --ignore-path .gitignore --fix",
     "lint:check:css": "stylelint \"**/*.{css,less,styl,scss,sass,sss}\" --ignore-path .gitignore",
     "lint:fix:css": "stylelint \"**/*.{css,less,styl,scss,sass,sss}\" --ignore-path .gitignore --fix",
-    "lint:checks": "npm run lint:check:js && npm run lint:check:css"
+    "lint:checks": "npm run lint:check:js && npm run lint:check:css",
+    "deploy": "netlify deploy"
   },
   "eslintConfig": {
     "extends": [
