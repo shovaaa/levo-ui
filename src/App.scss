@@ -1,0 +1,20 @@
+.App {
+  text-align: left;
+  padding: 10% 10%;
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100vw;
+  font-family: 'Heebo', sans-serif;
+  
+  @media (min-width: 769px) { 
+    padding: 7% 10%;
+    height: 100vh;
+   }
+
+  .container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;  
+  }
+}
+
