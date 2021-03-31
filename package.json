@@ -6,8 +6,12 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "bootstrap": "^4.6.0",
+    "node-sass": "^5.0.0",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
@@ -15,7 +19,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint:check:js": "eslint \"**/*.{js,jsx}\" --ignore-path .gitignore",
+    "lint:fix:js": "eslint \"**/*.{js,jsx}\" --ignore-path .gitignore --fix",
+    "lint:check:css": "stylelint \"**/*.{css,less,styl,scss,sass,sss}\" --ignore-path .gitignore",
+    "lint:fix:css": "stylelint \"**/*.{css,less,styl,scss,sass,sss}\" --ignore-path .gitignore --fix",
+    "lint:checks": "npm run lint:check:js && npm run lint:check:css"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +43,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-plugin-react": "^7.23.1",
+    "stylelint": "^13.12.0"
   }
 }
